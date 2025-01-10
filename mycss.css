@@ -1,0 +1,209 @@
+.content {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: flex; /* Χρησιμοποιούμε Flexbox για στοίχιση */
+    flex-direction: column; /* Τα στοιχεία στοιχίζονται κάθετα */
+    align-items: flex-start; /* Όλα τα στοιχεία ευθυγραμμίζονται προς τα αριστερά */
+    gap: 20px; /* Κενό ανάμεσα στις δύο ενότητες */
+    padding: 20px;
+}
+
+
+
+nav {
+    display: table-cell;
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(229, 210, 196);
+    padding: 20px;
+    margin: 0;
+    vertical-align: top;
+    text-align: center; /* Κεντράρει το περιεχόμενο */
+}
+
+nav a {
+    display: block;
+    width: 85%; /* Μικρότερο πλάτος */
+    margin: 0 auto 10px auto; /* Κεντραρισμένα κουμπιά */
+    padding: 8px 12px; /* Μικρότερο padding */
+    font-size: 14px; /* Μικρότερη γραμματοσειρά */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(220, 200, 185);
+    border: 1px solid indigo;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4b0082;
+    color: #fff;
+}
+
+
+.main {
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: table-cell;
+    width: 100%;
+    text-align: justify;
+    background-color: whitesmoke;
+    padding: 0;
+}
+
+
+
+header{
+    font-family: 'Roboto', sans-serif;
+	text-align:center;
+	display:block;
+	border-style: groove;
+	color: white;
+	letter-spacing: 2px;
+  	text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('1540957179716.jpeg');
+	background-size: cover;
+	background-position: center;
+
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+	padding: 20px;
+}
+
+
+
+h2 {
+    margin: 20px 0; /* Ομοιόμορφο περιθώριο πάνω και κάτω */
+    padding: 0; /* Καμία εσωτερική απόσταση */
+    font-size: 1.5em; /* Κρατάμε το μέγεθος γραμματοσειράς */
+    color: indigo; /* Χρώμα που ήδη χρησιμοποιείς */
+    text-align: left; /* Εξασφαλίζει ευθυγράμμιση προς τα αριστερά */
+	margin-left: 5;
+}
+
+
+
+
+main p {
+    margin: 0; /* Αφαίρεση περιττών κενών */
+    padding: 0;
+    line-height: 1.5; /* Βελτίωση αναγνωσιμότητας */
+    text-align: left;
+}
+
+
+.date{
+	color:darkred;
+}
+
+.photo{
+	display: block; /* Ensures no inline padding/margins */
+	width: 100%;
+  	height: auto;
+}
+
+
+footer {
+    background-color: white;
+    color: indigo;
+    padding: 10px 20px;
+    text-align: right; 
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+nav a,
+.top-link a {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(220, 200, 185); 
+    border: 1px solid indigo;
+    border-radius: 5px;
+    cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-link {
+    align-self: flex-end; /* Aligns the button to the right within Flexbox */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+
+.top-link a {
+    background-color: indigo; /* Default background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Button size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Font size */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.top-link a:hover {
+    background-color: #9370DB; /* Lighter shade of indigo (medium purple) */
+    color: white; /* Maintain white text */
+}
+
+
+
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form button {
+    font-family: 'Roboto', sans-serif; /* Ίδια γραμματοσειρά με το υπόλοιπο site */
+    font-size: 16px; /* Εναρμόνιση μεγέθους */
+    background-color: indigo;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4b0082;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
